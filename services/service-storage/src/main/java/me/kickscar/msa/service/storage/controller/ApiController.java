@@ -24,3 +24,10 @@ public class ApiController {
         return ResponseEntity.status(HttpStatus.OK).body(Map.of("url", fileUploadService.restoreImage(file)));
     }
 }
+
+// 자바 8에선 안됨 9에서는 됨
+//
+//new HashMap<String, Object>(){
+//	
+//	put("url", "...");
+//}
